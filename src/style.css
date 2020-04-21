@@ -554,7 +554,9 @@ nav {
         font-size: 20px;
     }
 
-    .coin_card{
+    .coin_card,
+    .profile,
+    .hero{
         margin-top: 60px;
     }
 
