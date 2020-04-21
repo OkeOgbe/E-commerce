@@ -43,6 +43,16 @@ body a:hover {
     color: var(--dark_blue);
 }
 
+.default_btn_alt {
+    background: var(--light_blue);
+    padding: 0.4em 1.5em;
+    color: var(--default_orange);
+    border-radius: 30px;
+    outline: none;
+    box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease;
+}
+
 .orange_text {
     color: var(--default_orange) !important;
 }
@@ -65,11 +75,11 @@ body a:hover {
     background: var(--dark_blue) !important;
 }
 
-.white_text{
+.white_text {
     color: #ffff;
 }
 
-.fixed_message{
+.fixed_message {
     background: var(--default_orange);
     border: none;
     outline: none;
@@ -83,7 +93,7 @@ body a:hover {
     z-index: 999;
 }
 
-.fixed_message i{
+.fixed_message i {
     font-size: 33px;
     position: relative;
 }
@@ -134,46 +144,80 @@ nav {
 
 /**services**/
 
-.service_card_content {
+.service_card {
     box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 1.5em;
     transition: all 0.5s ease;
+    background: var(--dark_blue);
+    border: none;
+    outline: none;
 }
 
-.service_card_content:hover{
+.service_card:hover {
     background-color: var(--default_orange);
     color: var(--dark_blue);
 }
 
-.service_card_content .icon{
-    color: var(--default_orange);
+.close {
+    width: fit-content;
+    position: absolute;
+    left: 90%;
+    top: 0;
 }
 
+.modal-content{
+        padding: 1.5em;
+}
 
-
-.modal-content {
+.bg_orange {
     padding: 1.5em;
+    background: var(--default_orange);
+    margin: 0 auto;
+}
+
+.bg_orange i {
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+.form_element select{
+    background: var(--dark_blue);
+    border: none;
+    border-radius: 30px;
+    width: 70%;
+    padding: 0.5em;
+    outline: none;
 }
 
 /***why choose us***/
-.benefits_text_holder{
+.benefits_text_holder {
     display: flex;
     align-items: center;
     min-height: 80vh;
 }
 
-.benefit{
+.benefit {
     display: flex;
 }
 
-.benefit i{
-    font-size: 20px; 
+.benefit i {
+    font-size: 20px;
 }
 
 /***contact us***/
-.contact_form_holder{
+.contact_form_holder {
     padding: 0 1.5em;
+}
+
+/***forgot password****/
+
+.forgot .w-50{
+    margin: 0 auto;
+}
+
+.success .icon_holder i{
+    font-size: 50px;
 }
 
 /****login page*****/
@@ -228,7 +272,7 @@ nav {
     color: #fff;
 }
 
-.forgot{
+.forgot {
     text-align: right;
 }
 
@@ -242,19 +286,19 @@ nav {
         display: none;
     }
 
-    .open_btn{
+    .open_btn {
         display: block;
     }
 
-    .hero_img_holder{
+    .hero_img_holder {
         padding: 0;
     }
 
-    .service_card_content{
+    .service_card_content {
         margin-top: 20px;
     }
 
-    .contact_form_holder{
+    .contact_form_holder {
         padding: 0;
     }
 
@@ -270,4 +314,9 @@ nav {
         padding: 0;
         min-height: 70vh;
     }
+
+    .forgot .w-50 {
+      width: 100% !important;
+    }
+
 }
