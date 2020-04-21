@@ -80,7 +80,7 @@ body a:hover {
 }
 
 
-.gray_text{
+.gray_text {
     color: lightgrey;
     font-size: 14px !important;
 }
@@ -88,6 +88,10 @@ body a:hover {
 /*****navigation****/
 nav {
     padding: 1.5em;
+}
+
+.slide {
+    width: 100% !important;
 }
 
 .logo {
@@ -102,6 +106,52 @@ nav {
 .nav_link a {
     color: #fff;
 }
+
+/***mobile nav**/
+.open_btn {
+    float: right;
+    font-size: 28px;
+    display: none;
+    cursor: pointer;
+    position: relative;
+    top: -5px;
+}
+
+.mobile_nav {
+    width: 0%;
+    position: fixed;
+    height: 50vh;
+    top: 3.8em;
+    background-color: var(--dark_blue);
+    overflow-x: hidden;
+    z-index: 99999;
+    transition: all 0.4s ease-in;
+}
+
+
+.mobile_nav_content a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: var(--default_orange);
+}
+
+.nav_inner {
+    text-align: left;
+}
+
+.nav_inner ul {
+    padding: 2em 0.5em;
+}
+
+
+.nav_inner ul li {
+    border-top: 1px solid var(--primary_green);
+    width: 100%;
+    list-style: none;
+
+}
+
 
 /***hero****/
 .hero_text_holder {
@@ -274,12 +324,12 @@ nav {
     display: flex;
     align-items: center;
     min-height: 90vh;
-  
+
 }
 
-.profile_card{
-  box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.5);
-  padding: 1.5em 2em;
+.profile_card {
+    box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.5);
+    padding: 1.5em 2em;
 }
 
 .accordion {
@@ -318,7 +368,7 @@ nav {
     transition: max-height 0.2s ease-out;
 }
 
-.faq_answer label{
+.faq_answer label {
     font-size: 15px;
 }
 
@@ -327,13 +377,13 @@ nav {
     padding: 12px;
 }
 
-.user_profile{
+.user_profile {
     display: flex;
     align-items: center;
     min-height: 85vh;
 }
 
-.profile_content{
+.profile_content {
     padding: 0 30px;
 }
 
@@ -341,23 +391,81 @@ nav {
     display: flex;
 }
 
-.profile_info p{
+.profile_info p {
     margin-left: 20px;
 }
 
 /***post a trade***/
-.post_accordion_holder .profile_card{
+.post_accordion_holder .profile_card {
     padding: 2em;
 }
 
-.post_trade_content input{
+.post_trade_content input {
     width: 60%;
 }
 
-.hint_item span{
+.hint_item span {
     color: var(--default_orange);
     font-size: 20px;
 }
+
+/***tradelist**/
+.tradelist form {
+    display: flex;
+}
+
+.tradelist .post_trade_content input {
+    width: 80%;
+}
+
+.tradelist .profile_card{
+    margin: 0 auto;
+}
+
+.tradelist .post_accordion_holder{
+    min-height: 70vh;
+}
+
+.trade .hint_item{
+    display: flex;
+}
+
+.trade .hint_item p {
+    margin-left: 20px;
+     margin-top: 6px;
+}
+
+.trade .post_accordion_holder{
+    min-height: 65vh;
+}
+
+.how_text_holder{
+    display: flex;
+    align-items: center;
+    min-height: 65vh;
+}
+
+.hero_text{
+    padding: 0 20px;
+}
+
+/***exchange****/
+.coin_card{
+     box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.5);
+     min-height: 65vh;
+}
+
+.coin_logo{
+    width: 45%;
+    margin: 0 auto;
+}
+
+.coin_logo img{
+    margin-top: -50px;
+    width: 100%;
+}
+
+
 
 
 @media screen and (max-width: 990px) {
@@ -417,7 +525,7 @@ nav {
         width: 100% !important;
     }
 
-    .profile_card{
+    .profile_card {
         padding: 1em;
     }
 
@@ -426,11 +534,11 @@ nav {
         min-height: 65vh;
     }
 
-    .user_profile{
+    .user_profile {
         min-height: 50vh;
     }
-    
-    .profile_content{
+
+    .profile_content {
         padding: 0;
     }
 
@@ -438,5 +546,16 @@ nav {
         width: 100%;
     }
 
+    .tradelist form {
+        display: block;
+    }
+
+    .trade h2{
+        font-size: 20px;
+    }
+
+    .coin_card{
+        margin-top: 60px;
+    }
 
 }

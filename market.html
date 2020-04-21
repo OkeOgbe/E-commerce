@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body class="bg_light">
+    <nav class="section_padding">
+        <div class="logo">
+            <a href="#" class="orange_text">Logo</a>
+        </div>
+        <div class="nav_link_holder">
+            <div class="nav_link mr-4">
+                <a href="#">Exchange</a>
+            </div>
+            <div class="nav_link mr-4">
+                <a href="#">Blog</a>
+            </div>
+            <div class="nav_link mr-4">
+                <a href="#">Market</a>
+            </div>
+            <div class="nav_link mr-4">
+                <div class="dropdown show">
+                    <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Ogbe Daniel
+                    </a>
+
+                    <div class="dropdown-menu bg_light" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item orange_text" href="tradelist.html">Tradelist</a>
+                        <a class="dropdown-item orange_text" href="posttrade.html">Post A trade</a>
+                        <a class="dropdown-item orange_text" href="profile.html">Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_link mr-4">
+                <a href="index.html">Log out</a>
+            </div>
+
+        </div>
+        <span class="open_btn orange_text">&#9776;</span>
+    </nav>
+
+      <div class="mobile_nav" id="mobileNav">
+          <div class="mobile_nav_content w-100">
+
+              <div class="nav_inner w-100">
+                  <ul>
+                      <li>
+                          <a href="welcome.html">Home</a>
+                      </li>
+                      <li>
+                          <a href="exchange.html">Exchange</a>
+                      </li>
+                      <li>
+                          <a href="market.html">Market</a>
+                      </li>
+                      <li>
+                          <div class="dropdown show">
+                              <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Ogbe Daniel
+                              </a>
+
+                              <div class="dropdown-menu bg_light" aria-labelledby="dropdownMenuLink">
+                                  <a class="dropdown-item orange_text" href="tradelist.html">Tradelist</a>
+                                  <a class="dropdown-item orange_text" href="posttrade.html">Post A trade</a>
+                                  <a class="dropdown-item orange_text" href="profile.html">Profile</a>
+                              </div>
+                          </div>
+                      </li>
+                      <li>
+                          <a href="index.html">Log out</a>
+                      </li>
+
+                  </ul>
+              </div>
+
+          </div>
+      </div>
+
+    <section class="tradelist section_padding  mt-3 pt-4">
+        <h2 class="white_text">
+            Pick the trade that
+            <span class="orange_text">fits your wants</span>
+        </h2>
+        <div class="post_accordion_holder mt-3">
+            <div class="profile_card w-100">
+                <div class="post_accordion_header">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-buy"
+                                role="tab" aria-controls="pills-home" aria-selected="true">Quick Buy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-sell" role="tab"
+                                aria-controls="pills-profile" aria-selected="false">Quick Sell</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="tab-content post_trade_content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-buy" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
+                            <form action="" method="get">
+
+                                <div class="form_element mt-3">
+                                    <label for="Coin" class="orange_text pr-5 mt-3">Item</label>
+                                    <select nam e="Coin" class="orange_text" id="">
+                                        <option value="" class="orange_text">Bitcoin</option>
+                                        <option value="" class="orange_text">Etherum</option>
+                                        <option value="" class="orange_text">Ripple</option>
+                                        <option value="" class="orange_text">Litecoin</option>
+                                        <option value="" class="orange_text">Dash</option>
+                                    </select>
+                                </div>
+
+                                <div class="form_element mt-3">
+                                    <label for="Amount" class="orange_text">Amount</label>
+                                    <input type="number">
+
+                                </div>
+
+                                <div class="form_element mt-3">
+                                    <label for="Currency" class="orange_text ">Currency</label>
+
+                                    <select name="Currency" class="orange_text" id="">
+                                        <option value="" class="orange_text">NGN</option>
+                                        <option value="" class="orange_text">EUR</option>
+                                        <option value="" class="orange_text">USD</option>
+                                        <option value="" class="orange_text">GBP</option>
+                                        <option value="" class="orange_text">CNY</option>
+                                    </select>
+                                </div>
+
+                                <div class="form_element mt-3">
+                                    <label for="Currency" class="orange_text">Currency</label>
+
+                                    <select name="Currency" class="orange_text" id="">
+                                        <option value="" class="orange_text">Pending</option>
+                                        <option value="" class="orange_text">Completed</option>
+                                        <option value="" class="orange_text">Cancelled</option>
+
+                                    </select>
+                                </div>
+
+
+                                <div class="btn_holder mt-5 v_align">
+                                    <button type="submit" class="default_btn">Search</button>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="pills-sell" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <form action="" method="get">
+
+                                <div class="form_element mt-3">
+                                    <label for="Coin" class="orange_text pr-5 mt-3">Item</label>
+                                    <select nam e="Coin" class="orange_text" id="">
+                                        <option value="" class="orange_text">Bitcoin</option>
+                                        <option value="" class="orange_text">Etherum</option>
+                                        <option value="" class="orange_text">Ripple</option>
+                                        <option value="" class="orange_text">Litecoin</option>
+                                        <option value="" class="orange_text">Dash</option>
+                                    </select>
+                                </div>
+
+                                <div class="form_element mt-3">
+                                    <label for="Amount" class="orange_text">Amount</label>
+                                    <input type="number">
+
+                                </div>
+
+                                <div class="form_element mt-3">
+                                    <label for="Currency" class="orange_text ">Currency</label>
+
+                                    <select name="Currency" class="orange_text" id="">
+                                        <option value="" class="orange_text">NGN</option>
+                                        <option value="" class="orange_text">EUR</option>
+                                        <option value="" class="orange_text">USD</option>
+                                        <option value="" class="orange_text">GBP</option>
+                                        <option value="" class="orange_text">CNY</option>
+                                    </select>
+                                </div>
+
+                                <div class="form_element mt-3">
+                                    <label for="Currency" class="orange_text">Currency</label>
+
+                                    <select name="Currency" class="orange_text" id="">
+                                        <option value="" class="orange_text">Pending</option>
+                                        <option value="" class="orange_text">Completed</option>
+                                        <option value="" class="orange_text">Cancelled</option>
+
+                                    </select>
+                                </div>
+
+
+                                <div class="btn_holder mt-5 v_align">
+                                    <button type="submit" class="default_btn">Search</button>
+                                </div>
+
+                            </form>
+
+ 
+                            <table class="w-100 mt-4">
+                                <thead class="pb-3">
+                                    <tr>
+                                        <th class="gray_text">Name</th>
+                                        <th class="gray_text">Coin Type</th>
+                                        <th class="gray_text">Price / Coin</th>
+                                        <th class="d-none d-md-table-cell gray_text">Rating</th>
+                                        <th class="text-right gray_text">Trade</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="mt-5">
+                                    <tr>
+                                        <td class="orange_text">blue </td>
+                                        <td class="orange_text">bitcoin</td>
+                                        <td class="orange_text">2,000 NGN</td>
+                                        <td class="d-none d-md-table-cell orange_text">0% of 0 Trades</td>
+                                        <td class="td-actions text-right">
+                                           <a href="trade.html" class="default_btn">Trade</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+    </section>
+
+
+
+
+
+</body>
+<script src="assets/libs/jquery/jquery.min.js"></script>
+<script src="assets/libs/bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+<script src="src/app.js"></script>
+
+</html>

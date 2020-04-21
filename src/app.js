@@ -28,3 +28,7 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+$(".open_btn").on("click", function () {
+  $(".mobile_nav").toggleClass("slide");
+});
