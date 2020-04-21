@@ -79,25 +79,11 @@ body a:hover {
     color: #ffff;
 }
 
-.fixed_message {
-    background: var(--default_orange);
-    border: none;
-    outline: none;
-    width: 70px;
-    height: 70px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    border-radius: 50px;
-    padding: 0.5em;
-    z-index: 999;
-}
 
-.fixed_message i {
-    font-size: 33px;
-    position: relative;
+.gray_text{
+    color: lightgrey;
+    font-size: 14px !important;
 }
-
 
 /*****navigation****/
 nav {
@@ -166,9 +152,10 @@ nav {
     top: 0;
 }
 
-.modal-content{
-        padding: 1.5em;
+.modal-content {
+    padding: 1.5em;
 }
+
 
 .bg_orange {
     padding: 1.5em;
@@ -181,7 +168,7 @@ nav {
     font-size: 30px;
 }
 
-.form_element select{
+.form_element select {
     background: var(--dark_blue);
     border: none;
     border-radius: 30px;
@@ -212,12 +199,17 @@ nav {
 
 /***forgot password****/
 
-.forgot .w-50{
+.forgot .w-50 {
     margin: 0 auto;
 }
 
-.success .icon_holder i{
+.success .icon_holder i {
     font-size: 50px;
+}
+
+.success_card {
+    width: 60%;
+    margin: 0 auto;
 }
 
 /****login page*****/
@@ -276,6 +268,98 @@ nav {
     text-align: right;
 }
 
+/***user profile***/
+.profile_accordion_holder,
+.post_accordion_holder {
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+  
+}
+
+.profile_card{
+  box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.5);
+  padding: 1.5em 2em;
+}
+
+.accordion {
+    color: #fff;
+    background: var(--light_blue);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none !important;
+    font-size: 16px;
+    transition: all ease 0.4s;
+}
+
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    font-size: 20px;
+
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.faq_answer {
+    padding: 0 1.5em;
+    max-height: 0;
+    color: #ffff;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.faq_answer label{
+    font-size: 15px;
+}
+
+.faq_answer p {
+    font-size: 16px;
+    padding: 12px;
+}
+
+.user_profile{
+    display: flex;
+    align-items: center;
+    min-height: 85vh;
+}
+
+.profile_content{
+    padding: 0 30px;
+}
+
+.profile_info {
+    display: flex;
+}
+
+.profile_info p{
+    margin-left: 20px;
+}
+
+/***post a trade***/
+.post_accordion_holder .profile_card{
+    padding: 2em;
+}
+
+.post_trade_content input{
+    width: 60%;
+}
+
+.hint_item span{
+    color: var(--default_orange);
+    font-size: 20px;
+}
+
+
 @media screen and (max-width: 990px) {
     .section_padding {
         padding-left: 1.5em;
@@ -292,6 +376,20 @@ nav {
 
     .hero_img_holder {
         padding: 0;
+        margin-top: 15px;
+    }
+
+    .modal-content .bg_orange {
+        width: 100% !important;
+    }
+
+    .success_card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .form_element select {
+        width: 60%;
     }
 
     .service_card_content {
@@ -316,7 +414,29 @@ nav {
     }
 
     .forgot .w-50 {
-      width: 100% !important;
+        width: 100% !important;
     }
+
+    .profile_card{
+        padding: 1em;
+    }
+
+    .profile_accordion_holder,
+    .post_accordion_holder {
+        min-height: 65vh;
+    }
+
+    .user_profile{
+        min-height: 50vh;
+    }
+    
+    .profile_content{
+        padding: 0;
+    }
+
+    .post_trade_content input {
+        width: 100%;
+    }
+
 
 }
