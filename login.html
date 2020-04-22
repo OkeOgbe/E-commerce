@@ -12,50 +12,106 @@
 </head>
 
 <body class="bg_light">
+    <header>
+        <nav class="">
+            <div class="container">
+                <div class="logo">
+                    <a href="#" class="orange_text">Logo</a>
+                </div>
+                <div class="nav_link_holder">
+                    <div class="nav_link mr-4">
+                        <a href="#">Exchange</a>
+                    </div>
+                    <div class="nav_link mr-4">
+                        <a href="#">Blog</a>
+                    </div>
+                    <div class="nav_link mr-4">
+                        <a href="#">Market</a>
+                    </div>
+                    <div class="nav_link mr-4">
+                        <a href="signup.html" target="_blank">Signup</a>
+                    </div>
+                    <div class="nav_link mr-4">
+                        <a href="login.html" target="_blank">Login</a>
+                    </div>
 
+                </div>
+                <span class="open_btn orange_text">&#9776;</span>
+            </div>
+        </nav>
+
+        <div class="mobile_nav" id="mobileNav">
+            <div class="mobile_nav_content w-100">
+
+                <div class="nav_inner w-100">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="exchange.html">Exchange</a>
+                        </li>
+                        <li>
+                            <a href="market.html">Market</a>
+                        </li>
+                        <li>
+                            <a href="signup.html" target="_blank">Signup</a>
+                        </li>
+                        <li>
+                            <a href="login.html" target="_blank">Login</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
     <section class="login mt-4">
         <div class="section_padding">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="login_img_holder">
-                        <img src="assets/img/login_img.svg" class="w-100" alt="">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="login_img_holder">
+                            <img src="assets/img/login_img.svg" class="w-100" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="login_card_holder">
-                        <div class="w-100">
-                            <div class="login_card">
-                                <div class="login_content">
-                                    <h2>Login</h2>
-                                    <p>Welcome Back</p>
+                    <div class="col-md-6">
+                        <div class="login_card_holder">
+                            <div class="w-100">
+                                <div class="login_card">
+                                    <div class="login_content">
+                                        <h2>Login</h2>
+                                        <p>Welcome Back</p>
 
-                                    <div class="login_form_holder">
-                                        <form action="welcome.html" method="get">
-                                            <div class="form_element mt-2">
-                                                <i class="far fa-envelope orange_text"></i>
-                                                <input type="email" placeholder="Email" required>
-                                            </div>
-                                            <div class="form_element mt-2">
-                                                <i class="fas fa-lock orange_text"></i>
-                                                <input type="password" placeholder="Password" required>
-                                            </div>
+                                        <div class="login_form_holder">
+                                            <form action="welcome.html" method="get">
+                                                <div class="form_element mt-2">
 
-                                            <div class="form_links  pt-3">
-                                        
-                                                <div class="forgot">
-                                                    <a href="forgot.html" target="_blank" class="orange_text">Forgot password?</a>
+                                                    <input type="email" placeholder="Email" required>
                                                 </div>
-                                            </div>
+                                                <div class="form_element mt-2">
 
-                                            <div class="btn_holder v_align mt-4">
-                                                <button type="submit" class="w-50  default_btn">Login</button>
-                                            </div>
-                                            
-                                            <p class="v_align pt-4">
-                                                Dont have an account? <a href="signup.html" class="orange_text">Register Here </a>
-                                            </p>
+                                                    <input type="password" placeholder="Password" required>
+                                                </div>
 
-                                        </form>
+                                                <div class="form_links  pt-3">
+
+                                                    <div class="forgot text-center">
+                                                        <a href="forgot.html" target="_blank" class="orange_text">Forgot password?</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="btn_holder v_align mt-4">
+                                                    <button type="submit" class="w-50  default_btn">Login</button>
+                                                </div>
+
+                                                <p class="v_align pt-4 small">
+                                                    Dont have an account? <a href="signup.html" class=" small orange_text">Register Here </a>
+                                                </p>
+
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -64,7 +120,6 @@
                 </div>
             </div>
         </div>
-
     </section>
 </body>
 <script src="assets/libs/jquery/jquery.min.js"></script>

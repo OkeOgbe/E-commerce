@@ -23,16 +23,26 @@ body a:hover {
 }
 
 .section_padding {
-    padding-left: 5em;
-    padding-right: 5em;
+    min-height: 50vh;
+
+}
+
+.section_padding h1,
+.section_padding h2,
+.section_padding h3,
+.section_padding h4 {
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
 }
 
 .default_btn {
     border: 2px solid var(--default_orange);
-    background: transparent;
-    padding: 0.4em 1.5em;
+    background: var(--light_blue);
+    padding: 18px 28px;
+    font-size: 15px;
     color: var(--default_orange);
-    border-radius: 30px;
+    border-radius: 3px;
     outline: none;
     box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.15);
     transition: all 0.5s ease;
@@ -55,6 +65,7 @@ body a:hover {
 
 .orange_text {
     color: var(--default_orange) !important;
+    font-size: 22px;
 }
 
 .v_align {
@@ -87,7 +98,7 @@ body a:hover {
 
 /*****navigation****/
 nav {
-    padding: 1.5em;
+    padding: 1.5em 0;
 }
 
 .slide {
@@ -105,6 +116,13 @@ nav {
 
 .nav_link a {
     color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.4s ease;
+}
+
+.nav_link a:hover {
+    color: #e9d16f;
 }
 
 /***mobile nav**/
@@ -166,11 +184,13 @@ nav {
 
 .hero_text_content h1 {
     font-size: 50px;
+    font-weight: 900;
+    color: var(--default_orange);
 }
 
 .hero_text_content p {
     font-size: 16px;
-    font-weight: 100;
+    font-weight: normal;
 }
 
 .hero_img_holder {
@@ -181,13 +201,25 @@ nav {
 /**services**/
 
 .service_card {
-    box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.2);
     color: #fff;
     padding: 1.5em;
     transition: all 0.5s ease;
     background: var(--dark_blue);
     border: none;
     outline: none;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service_card span {
+    font-size: 18px;
+}
+
+.service_card p {
+    font-size: 16px;
 }
 
 .service_card:hover {
@@ -221,10 +253,18 @@ nav {
 .form_element select {
     background: var(--dark_blue);
     border: none;
-    border-radius: 30px;
-    width: 70%;
-    padding: 0.5em;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px;
+    height: 67px;
     outline: none;
+    font-size: 15px;
+}
+
+.form_element label {
+    display: block;
+    font-size: 16px;
+    color: #fff;
 }
 
 /***why choose us***/
@@ -238,8 +278,39 @@ nav {
     display: flex;
 }
 
+.benefit h5 {
+    font-size: 18px;
+}
+
+.benefit p {
+    font-size: 16px;
+}
+
 .benefit i {
     font-size: 20px;
+}
+
+table th {
+    line-height: 30px;
+}
+
+table tr {
+    line-height: 48px;
+
+}
+
+table tr td {
+    font-size: 15px !important;
+}
+
+.term_content h4,
+.term_content h2 {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.term_content p {
+    font-size: 16px;
 }
 
 /***contact us***/
@@ -257,6 +328,10 @@ nav {
     font-size: 50px;
 }
 
+.forgot a {
+    font-size: 13px;
+}
+
 .success_card {
     width: 60%;
     margin: 0 auto;
@@ -270,7 +345,7 @@ nav {
 }
 
 .login_card {
-    box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.2);
     min-height: 50vh;
     margin: 0 0.5em;
 }
@@ -280,16 +355,32 @@ nav {
     color: #fff;
 }
 
+.login_content h2 {
+    font-size: 18px;
+    font-weight: bolder !important;
+    color: #ddd;
+    letter-spacing: 1.4px;
+}
+
+.login_content p {
+    font-size: 16px;
+}
+
 .form_element input,
 .form_element textarea {
-    width: 90%;
+    width: 100%;
     border: none;
     border-bottom: 2px solid var(--dark_blue);
     outline: none;
     padding: 0.6em;
-    background: transparent;
+    background: var(--dark_blue);
     color: #ffff;
     transition: all 0.5s ease;
+    font-size: 14px;
+}
+
+.form_element input {
+    height: 67px;
 }
 
 .form_element input:focus,
@@ -308,14 +399,26 @@ nav {
 
 .login_text_holder h2 {
     font-size: 30px;
+    font-weight: bold;
 }
 
 .login_text_holder p {
     color: #fff;
+    font-size: 16px;
 }
 
 .forgot {
-    text-align: right;
+    text-align: left;
+}
+
+.remember span {
+    font-size: 14px;
+}
+
+p.orange_text,
+span.orange_text,
+a.orange_text {
+    font-size: 14px;
 }
 
 /***user profile***/
@@ -328,7 +431,7 @@ nav {
 }
 
 .profile_card {
-    box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.2);
     padding: 1.5em 2em;
 }
 
@@ -395,13 +498,17 @@ nav {
     margin-left: 20px;
 }
 
+.about_text_holder p {
+    font-size: 16px;
+}
+
 /***post a trade***/
 .post_accordion_holder .profile_card {
     padding: 2em;
 }
 
 .post_trade_content input {
-    width: 60%;
+    width: 100%;
 }
 
 .hint_item span {
@@ -411,77 +518,82 @@ nav {
 
 /***tradelist**/
 .tradelist form {
-    display: flex;
+    display: block;
 }
 
 .tradelist .post_trade_content input {
-    width: 80%;
+    width: 100%;
 }
 
-.tradelist .profile_card{
-    margin: 0 auto;
-}
 
-.tradelist .post_accordion_holder{
+.tradelist .post_accordion_holder {
     min-height: 70vh;
 }
 
-.trade .hint_item{
+.trade .hint_item {
     display: flex;
 }
 
 .trade .hint_item p {
     margin-left: 20px;
-     margin-top: 6px;
+    margin-top: 6px;
 }
 
-.trade .post_accordion_holder{
+.trade .post_accordion_holder {
     min-height: 65vh;
 }
 
-.how_text_holder{
+.how_text_holder {
     display: flex;
     align-items: center;
     min-height: 65vh;
 }
 
-.hero_text{
+.hero_text {
     padding: 0 20px;
 }
 
-/***exchange****/
-.coin_card{
-     box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.5);
-     min-height: 65vh;
+.hero_text p {
+    font-size: 16px;
 }
 
-.coin_logo{
-    width: 45%;
+/***exchange****/
+.coin_card {
+    box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.2);
+    min-height: 450px;
+    background: var(--light_blue);
+}
+
+.coin_logo {
+    width: 150px;
     margin: 0 auto;
 }
 
-.coin_logo img{
+.coin_logo img {
     margin-top: -50px;
-    width: 100%;
+    width: 150px;
 }
 
-footer{
+footer {
     background: var(--dark_blue);
     padding: 1.5em 0;
 }
 
-.icons_holder i{
+.icons_holder i {
     font-size: 20px;
 }
 
+.footer_link a,
+.footer_rights p {
+    font-size: 14px;
+}
 
-
+.footer_socials p {
+    font-size: 15px;
+}
 
 @media screen and (max-width: 990px) {
-    .section_padding {
-        padding-left: 1.5em;
-        padding-right: 1.5em;
-    }
+
 
     .nav_link_holder {
         display: none;
@@ -506,7 +618,7 @@ footer{
     }
 
     .form_element select {
-        width: 60%;
+        width: 100%;
     }
 
     .service_card_content {
@@ -523,6 +635,11 @@ footer{
 
     .login_content {
         padding: 1.5em;
+    }
+
+    .login_content h2 {
+        font-weight: 900;
+        font-size: 18px;
     }
 
     .login_text_holder {
@@ -559,18 +676,18 @@ footer{
         display: block;
     }
 
-    .trade h2{
+    .trade h2 {
         font-size: 20px;
     }
 
     .coin_card,
     .profile,
-    .hero{
+    .hero {
         margin-top: 60px;
     }
 
     .footer_link,
-    .footer_rights{
+    .footer_rights {
         margin-top: 30px;
     }
 
